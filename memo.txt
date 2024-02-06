@@ -1,0 +1,15 @@
+자바스크립트(Javascript)
+	컴파일 과정 없이 브라우저 내부의 자바스크립트 처리기(인터프리터)에 의해 바로 실행된다.
+	⭐️개발이 발전됨에 따라 컴파일 과정이 가능해졌으며, Node.js로 서버환경을 구축한다.
+
+Data Type
+    Number => 연산기호를 이용해 계산할 수 있다.
+        integer
+        float
+
+    string  => text
+        "Hi..."
+        +: 두 개를 합쳐서 출력 ex_ "hello" + "my name is zzangtae" => "hello my name is zzangtae"
+
+Variable
+    
