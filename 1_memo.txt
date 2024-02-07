@@ -1,0 +1,111 @@
+자바스크립트(Javascript)
+	컴파일 과정 없이 브라우저 내부의 자바스크립트 처리기(인터프리터)에 의해 바로 실행된다.
+	⭐️개발이 발전됨에 따라 컴파일 과정이 가능해졌으며, Node.js로 서버환경을 구축한다.
+
+Data Type
+    - 숫자 타입(number) : 42, 3.14, ...
+        Number => 연산기호를 이용해 계산할 수 있다.
+        integer
+        float
+
+	- 논리 타입(bool) : true, false
+
+	- 문자열 타입(string) : "안녕", "하세요", "35", 'a', "A", ...
+        string  => text
+        "Hi..."
+        +: 두 개를 합쳐서 출력 ex_ "hello" + "my name is zzangtae" => "hello my name is zzangtae"
+
+	- 객체 레퍼런스 타입(object) : Object, Array, Math, Date,...
+
+	- undefined : 타입이 정해지지 않은 것을 의미한다.
+
+	- null : 값이 정해지지 않은 것을 의미한다.
+
+
+Variable
+    - var 키워드: 함수의 영역만 영역으로 판단한다. / 호이스팅 가능 / 재할당 가능, 재선언 가능
+	- let 키워드: 모든 영역을 영역으로 판단한다. / 호이스팅이 안 된다. / 재할당 가능, 재선언 금지
+    - const 키워드: 값을 변경시킬 수 없다. => 상수
+
+    변수 사용  이유 = 편리성
+    카멜 표기법 사용 -> myName
+
+Boolean
+    true / false
+
+Array -> 설명이 필요하지 않는 데이터 리스트 
+    []
+    const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
+
+    //get item from array
+    console.log(daysOfWeek[2]);
+
+    //add one more day to the array
+    daysOfWeek.push("sun");
+
+Object -> 설명이 필요한 정보가 담긴 데이터 리스트
+    const player = {
+        name: "jth",
+        point: 10,
+        fat: false,
+    }
+    console.log(player);
+    console.log(player.name);
+
+    //add
+    player.age = 26;
+
+    //update
+    player.point = 15;
+
+Function
+    function sayHello(name) {
+        console.log(name);
+    }
+    saHello("jth");
+
+    function player = {
+        name: "nico",
+        sayHello: function(name) {
+            console.log("Hello " + name);
+        }
+    }    
+    console.log(player.name);
+    player.saHello("ddeock");
+
+Return
+    console.log(): 콘솔에 결과를 보여주기 위한 것 / 결과를 눈으로 보기 위해서 사용
+    return: function 외부에서 value를 제공받기 위해 사용, 함수 종료
+
+Conditionals
+    prompt(message: str, default:str); -> 메세지를 보여주고 값을 넣으라고 말해준다. -> age = prompt("How old ar you");
+    console.log(age);
+
+    console.log(typeof age); => str => parseInt(): int형으로 바꿔준다.
+    const age = parseInt(prompt("How old are you"));
+
+    if (조건) {
+        //조건이 true면 실행
+        console.log("Hi");
+    } else {
+        //조건이 false면 실행
+    }
+
+    if(조건) {
+        //조건이 true면 실행
+        console.log("Hi");
+    } else if (조건) {
+        //if문의 조건이 false면 실행
+        console.log("Hi");
+    } else {
+        console.log("Hi");
+    }
+
+    AND = &&
+    OR = ||
+    ==: 값만 비교
+    ===: 유형도 비교
+
+submit
+    input 안에 있는 button을 누르거나 type이 submit인 input을 클릭하면 form이 submit 된다. => 새로고침
+    event.preventDefault()를 사용해 막을 수 있다. -> 브라우저가 기본 동작을 실행하지 못하게 막기 / event object는 preventDefault 함수를 기본적으로 갖고 있음
