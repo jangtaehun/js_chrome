@@ -1,6 +1,9 @@
 const loginFrom = document.querySelector("#login-form");
 const loginInput = loginFrom.querySelector("input");
 const loginSubmit = loginFrom.querySelector("input[type=submit]");
+const greeting = document.getElementById("greeting");
+
+const HIDDEM_CLASSNAME = "hidden";
 
 function loginBtnClick() {
     const namePattern = /^[가-힣a-zA-Z]+$/;
@@ -8,8 +11,6 @@ function loginBtnClick() {
 
     if (!namePattern.test(username)) {
         alert("Please write your korean or english name");
-    } else {
-        alert(`Hi ${username}!!`);
     }
 }
 loginSubmit.addEventListener("click", loginBtnClick);
